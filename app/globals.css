@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 40% 98%;
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 245 80% 55%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 190 90% 45%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 215 20% 92%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 320 80% 55%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 244 69% 47%;
+    --radius: 0.75rem;
+
+    /* Speco Design System tokens - Modern Light Mode */
+    --surface-container-high: #e2e8f0;
+    --tertiary-fixed-dim: #ffb695;
+    --on-secondary-container: #1e293b;
+    --tertiary-container: #ea580c;
+    --on-tertiary-fixed: #431407;
+    --on-primary-fixed: #312e81;
+    --secondary-container: #c7d2fe;
+    --primary-container: #4f46e5;
+    --surface-container-highest: #cbd5e1;
+    --error-container: #fee2e2;
+    --tertiary-fixed: #ffedd5;
+    --on-secondary-fixed-variant: #3730a3;
+    --on-tertiary-fixed-variant: #7c2d12;
+    --outline: #94a3b8;
+    --inverse-surface: #1e293b;
+    --surface-container-low: #f8fafc;
+    --surface-bright: #ffffff;
+    --on-background: #0f172a;
+    --on-primary-fixed-variant: #3730a3;
+    --surface-variant: #f1f5f9;
+    --on-primary-container: #e0e7ff;
+    --primary-fixed: #e0e7ff;
+    --surface-dim: #cbd5e1;
+    --secondary-fixed: #e0e7ff;
+    --on-secondary-fixed: #1e3a8a;
+    --surface-container-lowest: #ffffff;
+    --surface: #f8fafc;
+    --on-error-container: #991b1b;
+    --inverse-primary: #818cf8;
+    --outline-variant: #cbd5e1;
+    --secondary-fixed-dim: #c7d2fe;
+    --surface-tint: #4f46e5;
+    --surface-container: #f1f5f9;
+    --inverse-on-surface: #f1f5f9;
+    --tertiary: #ea580c;
+    --on-surface-variant: #475569;
+    --on-tertiary-container: #ffedd5;
+    --primary-fixed-dim: #c7d2fe;
+    --on-surface: #0f172a;
+    --on-primary: #ffffff;
+    --on-secondary: #ffffff;
+    --on-tertiary: #ffffff;
+    --on-error: #ffffff;
+    --error: #ef4444;
+  }
+
+  .dark {
+    --background: 230 25% 10%;
+    --foreground: 210 40% 98%;
+    --card: 230 30% 12%;
+    --card-foreground: 210 40% 98%;
+    --popover: 230 30% 12%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 260 100% 65%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 190 90% 50%;
+    --secondary-foreground: 222 47% 11%;
+    --muted: 230 20% 18%;
+    --muted-foreground: 215 20% 70%;
+    --accent: 320 90% 60%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 40%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 230 20% 18%;
+    --input: 230 20% 18%;
+    --ring: 260 100% 65%;
+
+    /* Speco Design System tokens - Vibrant Dark Mode */
+    --surface-container-high: #1a1b26;
+    --tertiary-fixed-dim: #ff79c6;
+    --on-secondary-container: #8be9fd;
+    --tertiary-container: #bd93f9;
+    --on-tertiary-fixed: #f8f8f2;
+    --on-primary-fixed: #f8f8f2;
+    --secondary-container: #282a36;
+    --primary-container: #6272a4;
+    --surface-container-highest: #1a1b26;
+    --error-container: #ff5555;
+    --tertiary-fixed: #ff79c6;
+    --on-secondary-fixed-variant: #8be9fd;
+    --on-tertiary-fixed-variant: #ff79c6;
+    --outline: #44475a;
+    --inverse-surface: #f8f8f2;
+    --surface-container-low: #1e1f29;
+    --surface-bright: #282a36;
+    --on-background: #f8f8f2;
+    --on-primary-fixed-variant: #1e1f29;
+    --surface-variant: #282a36;
+    --on-primary-container: #f8f8f2;
+    --primary-fixed: #bd93f9;
+    --surface-dim: #1a1b26;
+    --secondary-fixed: #8be9fd;
+    --on-secondary-fixed: #282a36;
+    --surface-container-lowest: #0d0e15;
+    --surface: #1e1f29;
+    --on-error-container: #ffb86c;
+    --inverse-primary: #bd93f9;
+    --outline-variant: #44475a;
+    --secondary-fixed-dim: #8be9fd;
+    --surface-tint: #bd93f9;
+    --surface-container: #1e1f29;
+    --inverse-on-surface: #282a36;
+    --tertiary: #ff79c6;
+    --on-surface-variant: #f8f8f2;
+    --on-tertiary-container: #f8f8f2;
+    --primary-fixed-dim: #bd93f9;
+    --on-surface: #f8f8f2;
+    --on-primary: #ffffff;
+    --on-secondary: #000000;
+    --on-tertiary: #000000;
+    --on-error: #ffffff;
+    --error: #ff5555;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-on-surface antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass-header {
+    @apply bg-background/70 backdrop-blur-xl border-b border-black/5 dark:border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-surface-container-lowest backdrop-blur-xl border border-outline-variant shadow-lg shadow-black/5 dark:bg-background/40 dark:border-white/10 dark:shadow-[0_8px_32px_rgba(0,0,0,0.3)];
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+  }
+
+  .no-line-rule {
+    border: none !important;
+  }
+
+  .background-shift {
+    background-color: rgba(26, 27, 38, 0.8);
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    @apply inline-block align-middle;
+  }
+
+  .material-symbols-filled {
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    @apply inline-block align-middle;
+  }
+}
